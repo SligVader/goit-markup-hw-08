@@ -1,0 +1,32 @@
+.section-team {
+  background-color: var(--background-color-three);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-card {
+  background-color: var(--background-color-two);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-text {
+  padding: 30px;
+
+  &__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--font-color-one);
+  margin-bottom: 10px;
+}
+}
+
+.team-text__position {
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--font-color-two);
+  margin-bottom: 15px;
+}

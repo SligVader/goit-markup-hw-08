@@ -1,0 +1,45 @@
+.footer {
+  background-color: var(--background-color-one);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  
+}
+.footer-items {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
+}
+.footer-map {
+  display: inline-block;
+  width: 235px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--background-color-two);
+}
+
+.footer-contact {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--font-color-three);
+}
+
+.footer-list__text:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-map,
+.footer-map,
+.footer-contact,
+.footer-contact {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-map:hover,
+.footer-map:focus,
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--brand-color);
+  fill: var(--brand-color);
+}
+

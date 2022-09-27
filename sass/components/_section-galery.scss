@@ -1,0 +1,9 @@
+.section-galery {
+  background-color: var(--background-color-two);
+  padding-bottom: 94px;
+}
+.galery__img,
+.team-list {
+  display: flex;
+  gap: 30px;
+}
