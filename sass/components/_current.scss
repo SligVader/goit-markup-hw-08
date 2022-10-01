@@ -1,7 +1,9 @@
 li > .current {
   color: var(--brand-color);
-  position: relative;
-  &::after {
+  position: relative;}
+
+@media screen and (min-width: 1200px) {
+  .current::after {
   content: '';
   position: absolute;
   display: block;
@@ -11,7 +13,10 @@ li > .current {
   height: 4px;
   border-radius: 2px;
   background-color: var(--brand-color);
-}
+
+    
+  }
+  
 }
 
 

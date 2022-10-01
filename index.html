@@ -28,7 +28,7 @@
           <li><a class="header-list__link link" href="">Contacts</a></li>
         </ul>
       </nav>
-      <ul class="header-list">
+      <ul class="header-list header-contact">
         <li>
           <a class="header-list__contact link" href="mailto:info@devstudio.com">
             <svg height="12" width="16">
@@ -42,6 +42,11 @@
             </svg>+1 212 772 4150</a></li>
       </ul>
     </div>
+    <button type="button" class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg width="40" height="40">
+        <use href="./images/icons.svg#burger"></use>
+      </svg>
+    </button>
   </header>
   <main>
     <section class="section-title">
@@ -100,10 +105,40 @@
     <section class="section-galery">
       <div class="container">
         <h2 class="section-galery__title">What we do</h2>
-        <ul class="galery__img">
-          <li><img src="./images/what-we-do/img-1.jpg" alt="coding" width="370" height="294" /></li>
-          <li><img src="./images/what-we-do/img-2.jpg" alt="color matching" width="370" height="294" /></li>
-          <li><img src="./images/what-we-do/img-3.jpg" alt="site optimizing" width="370" height="294" /></li>
+        <ul class="galery-list">
+          <li class="galery-list-img">
+            <picture>
+            <source
+            media="(min-width: 1200px)"
+            srcset="./images/what-we-do/img-1_lg@1.jpg 1x, ./images/what-we-do/img-1_lg@2.jpg 2x"/>
+            <img src="./images/what-we-do/img-1_lg@1.jpg" alt="coding" width="370" height="294" />
+            </picture>
+            <div class="galery-list-img__overlay">
+              <p class="galery-list-img__description">Desctop apps</p>
+            </div>
+          </li>
+          <li class="galery-list-img">
+            <picture>
+            <source
+            media="(min-width: 1200px)"
+            srcset="./images/what-we-do/img-2_lg@1.jpg 1x, ./images/what-we-do/img-2_lg@2.jpg 2x"/>
+            <img src="./images/what-we-do/img-2_lg@1.jpg" alt="color matching" width="370" height="294" />
+            </picture>
+            <div class="galery-list-img__overlay">
+              <p class="galery-list-img__description">Mobile apps</p>
+            </div>
+          </li>
+          <li class="galery-list-img">
+            <picture>
+            <source
+            media="(min-width: 1200px)"
+            srcset="./images/what-we-do/img-3_lg@1.jpg 1x, ./images/what-we-do/img-3_lg@2.jpg 2x"/>
+            <img src="./images/what-we-do/img-3_lg@1.jpg" alt="site optimizing" width="370" height="294" />
+            </picture>
+            <div class="galery-list-img__overlay">
+              <p class="galery-list-img__description">Design solutions</p>
+            </div>
+          </li>
         </ul>
       </div>
     </section>
@@ -112,7 +147,18 @@
         <h2 class="section-team__title">Our Team</h2>
         <ul class="team-list">
           <li class="team-card">
-            <img class="team-card__img" src="./images/our-team/img-4.jpg" alt="team member 1" width="270" height="260" />
+           <picture>
+            <source
+            media="(min-width: 1200px)"
+            srcset="./images/our-team/img-4_lg@1.jpg 1x, ./images/our-team/img-4_lg@2.jpg 2x"/>
+            <source
+            media="(min-width: 768px)"
+            srcset="./images/our-team/img-4_md@1.jpg 1x, ./images/our-team/img-4_md@2.jpg 2x"/>
+            <source
+            media="(min-width: 480px)"
+            srcset="./images/our-team/img-4_sm@1.jpg 1x, ./images/our-team/img-4_sm@2.jpg 2x"/>
+            <img class="team-card__img" src="./images/our-team/img-4_sm@1.jpg" alt="team member 1" />
+          </picture> 
             <div class="team-text">
               <h3 class="team-text__name">Christopher Walker</h3>
               <p class="team-text__position">Product Designer</p>
@@ -137,7 +183,18 @@
             </div>
           </li>
           <li class="team-card">
-            <img class="team-card__img" src="./images/our-team/img-5.jpg" alt="team member 2" width="270" height="260" />
+            <picture>
+            <source
+            media="(min-width: 1200px)"
+            srcset="./images/our-team/img-5_lg@1.jpg 1x, ./images/our-team/img-5_lg@2.jpg 2x"/>
+            <source
+            media="(min-width: 768px)"
+            srcset="./images/our-team/img-5_md@1.jpg 1x, ./images/our-team/img-5_md@2.jpg 2x"/>
+            <source
+            media="(min-width: 480px)"
+            srcset="./images/our-team/img-5_sm@1.jpg 1x, ./images/our-team/img-5_sm@2.jpg 2x"/>
+            <img class="team-card__img" src="./images/our-team/img-5_sm@1.jpg" alt="team member 2" />
+          </picture> 
             <div class="team-text">
               <h3 class="team-text__name">Kylie Evans</h3>
               <p class="team-text__position">Frontend Developer</p>
@@ -162,7 +219,18 @@
             </div>
           </li>
           <li class="team-card">
-            <img class="team-card__img" src="./images/our-team/img-6.jpg" alt="team member 3" width="270" height="260" />
+             <picture>
+            <source
+            media="(min-width: 1200px)"
+            srcset="./images/our-team/img-6_lg@1.jpg 1x, ./images/our-team/img-6_lg@2.jpg 2x"/>
+            <source
+            media="(min-width: 768px)"
+            srcset="./images/our-team/img-6_md@1.jpg 1x, ./images/our-team/img-6_md@2.jpg 2x"/>
+            <source
+            media="(min-width: 480px)"
+            srcset="./images/our-team/img-6_sm@1.jpg 1x, ./images/our-team/img-6_sm@2.jpg 2x"/>
+            <img class="team-card__img" src="./images/our-team/img-6_sm@1.jpg" alt="team member 3" />
+          </picture> 
             <div class="team-text">
               <h3 class="team-text__name">Ryan Harris</h3>
               <p class="team-text__position">Marketing</p>
@@ -188,7 +256,18 @@
 
           </li>
           <li class="team-card">
-            <img class="team-card__img" src="./images/our-team/img-7.jpg" alt="team member 4" width="270" height="260" />
+             <picture>
+            <source
+            media="(min-width: 1200px)"
+            srcset="./images/our-team/img-7_lg@1.jpg 1x, ./images/our-team/img-7_lg@2.jpg 2x"/>
+            <source
+            media="(min-width: 768px)"
+            srcset="./images/our-team/img-7_md@1.jpg 1x, ./images/our-team/img-7_md@2.jpg 2x"/>
+            <source
+            media="(min-width: 480px)"
+            srcset="./images/our-team/img-7_sm@1.jpg 1x, ./images/our-team/img-7_sm@2.jpg 2x"/>
+            <img class="team-card__img" src="./images/our-team/img-7_sm@1.jpg" alt="team member 3" />
+          </picture> 
             <div class="team-text">
               <h3 class="team-text__name">Tyler Moore</h3>
               <p class="team-text__position">UI Designer</p>
@@ -219,29 +298,29 @@
       <div class="container">
         <h2 class="section-customers__title">Our customers</h2>
         <ul class="customer-list list">
-          <li>
+          <li class="customer-list__tab">
             <a class="customer-list__link link" href="#" target="_blank"><svg height="60" width="106">
                 <use href="images/icons.svg#icon-customer1"></use>
               </svg>
             </a>
           </li>
-          <li> <a class="customer-list__link link" href="#" target="_blank"><svg height="60" width="106">
+          <li class="customer-list__tab"> <a class="customer-list__link link" href="#" target="_blank"><svg height="60" width="106">
                 <use href="images/icons.svg#icon-customer2"></use>
               </svg>
             </a></li>
-          <li> <a class="customer-list__link link" href="#" target="_blank"><svg height="60" width="106">
+          <li class="customer-list__tab"> <a class="customer-list__link link" href="#" target="_blank"><svg height="60" width="106">
                 <use href="images/icons.svg#icon-customer3"></use>
               </svg>
             </a></li>
-          <li> <a class="customer-list__link link" href="#" target="_blank"><svg height="60" width="106">
+          <li class="customer-list__tab"> <a class="customer-list__link link" href="#" target="_blank"><svg height="60" width="106">
                 <use href="images/icons.svg#icon-customer4"></use>
               </svg>
             </a></li>
-          <li> <a class="customer-list__link link" href="#" target="_blank"><svg height="60" width="106">
+          <li class="customer-list__tab"> <a class="customer-list__link link" href="#" target="_blank"><svg height="60" width="106">
                 <use href="images/icons.svg#icon-customer5"></use>
               </svg>
             </a></li>
-          <li> <a class="customer-list__link link" href="#" target="_blank"><svg height="60" width="106">
+          <li class="customer-list__tab"> <a class="customer-list__link link" href="#" target="_blank"><svg height="60" width="106">
                 <use href="images/icons.svg#icon-customer6"></use>
               </svg>
             </a></li>
@@ -249,10 +328,11 @@
       </div>
     </section>
   </main>
+  <!-- <footer class="footer" style="display: none"> -->
   <footer class="footer">
     <div class="container">
       <div class="footer-items">
-        <div>
+        <div class="footer-items-container">
           <a class="logo logo--footer link" href="./index.html">Web<span class="logo__part logo__part--footer">Studio</span></a>
           <address>
             <ul class="footer-list">
@@ -287,7 +367,6 @@
           </div>
         </div>
         <div class="form-footer">
-          <form name="subscribe-form" autocomplete="on" novalidate>
             <strong class="form-footer__header">Subscribe to the news letter</strong>
             <div class="form-footer__field">
             <label for="mail"></label>
@@ -345,7 +424,41 @@
       </form>
     </div>
   </div>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+       <svg width="40" height="40">
+        <use href="./images/icons.svg#burgecross"></use>
+       </svg>
+      </button>
+      <ul class="mobile-menu list">
+        <li><a href="./index.html" class="link current">Studio</a></li>
+        <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+      </ul>
+      
+      <ul class="mobile-contacts list">
+        <li><a href="tel:+12127724150" class="mobile-cel link">+1 212 772 41 50</a></li>
+        <li><a href="mailto:info@devstudio.com" class="mobile-mail link">info@devstudio.com</a></li>
+      </ul>
+      <ul class="mobile-socials list">
+        <li><a href="https://www.instagram.com/" target="_blank"
+              rel="noopener noreferrer nofollow" aria-label="instagram" class="mobile-instagram link">Instagram</a></li>
+        <li><a href="https://www.twitter.com/" target="_blank"
+              rel="noopener noreferrer nofollow" aria-label="twitter" class="mobile-twitter link">Twitter</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank"
+              rel="noopener noreferrer nofollow" aria-label="facebook" class="mobile-facebook link">Facebook</a></li>
+        <li><a href="https://www.linkedin.com/" target="_blank"
+              rel="noopener noreferrer nofollow" class="mobile-linkedin link">LinkedIn</a></li>
+      </ul>
+    </div>
   <script src="./js/modal.js"></script>
+  <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

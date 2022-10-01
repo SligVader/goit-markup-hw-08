@@ -1,13 +1,41 @@
 .section-team {
   background-color: var(--background-color-three);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  min-width: 480px;
+
+  @media screen and (min-width: 768px) {
+  min-width: 768px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+  
+  @media screen and (min-width: 1200px) {
+  min-width: 1200px;
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 94px;}
+
+
+
 }
 
 .team-card {
   background-color: var(--background-color-two);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 0px 0px 4px 4px;
+  //   &:not(lastchild) {
+
+  // }
+
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
+  margin-right: 30px;
+  margin-bottom: 30px;
+   }
+  
+  // @media screen and (min-width: 1200px) {
+  // }
+
+
 }
 
 .team-text {
@@ -29,4 +57,22 @@
   text-align: center;
   color: var(--font-color-two);
   margin-bottom: 15px;
+}
+
+.team-list {
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+  
+  
+
+  @media screen and (min-width: 1200px) {
+  display: flex;
+  gap: 30px;
+}
+
 }

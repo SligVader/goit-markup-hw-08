@@ -1,12 +1,17 @@
 .section-portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+ 
+  @media screen and (min-width: 1200px) {
   padding-top: 94px;
   padding-bottom: 94px;
+  }
 }
 
 .project-thumb {
   position: relative;
   overflow: hidden;
-
+ 
   &__overlay {
   position: absolute;
   width: 100%;
@@ -36,16 +41,25 @@
   justify-content: center;
   margin-right: -30px;
   margin-bottom: -30px;
+  
+  @media screen and (min-width: 768px) and (max-width: 1190px) {
+  justify-content: flex-start;
+  }
 }
+
 .project-item__link {
   display: block;
 
-  &:hover,
-  &:focus {
+  
+}
+
+.project-item:hover,
+.project-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-}
+  }
+
+
 
 .project-item__link:hover .project-thumb__overlay,
 .project-item__link:focus .project-thumb__overlay {
@@ -57,6 +71,16 @@
   flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 767px) {
+  min-width: 450px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1190px) {
+  min-width: 354px;
+  }
+
+
 }
 
 .project-description {

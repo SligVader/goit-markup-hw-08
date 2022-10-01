@@ -1,9 +1,18 @@
 .header {
   border-bottom: 1px solid #ececec;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+padding-left: 15px;
+padding-right: 15px;
+  }
 
   &--container {
   display: flex;
   flex-direction: row;
+  @media screen and (max-width: 767px){
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  
 }
 }
 
@@ -15,15 +24,33 @@
   letter-spacing: 0.02em;
   padding: 0;
   display: flex;
-  align-items: center;
   gap: 50px;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--font-color-two);
+
+  
 
   &__link {
   color: var(--font-color-one);
   padding-top: 30px;
   padding-bottom: 30px;
   display: inline-block;
+
+  @media screen and (max-width: 767px) {
+  display: none;
 }
+
+}
+}
+
+.header-contact {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+    gap: 10px;
+    
+  }
+  
 }
 
 .header-list__contact {
@@ -31,9 +58,22 @@
   padding-top: 30px;
   padding-bottom: 30px;
   display: flex;
-  align-items: center;
   gap: 10px;
   fill: var(--font-color-two);
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  
+
+@media screen and (max-width: 767px) {
+  display: none;
+}
+
+
 }
 .header-list__link,
 .header-list__link,

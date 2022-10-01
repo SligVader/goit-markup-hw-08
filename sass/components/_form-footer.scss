@@ -2,6 +2,14 @@
   width: 570px;
   height: 86px;
 
+  @media screen and (max-width: 1190px){
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+width: 450px;
+height: auto;
+}
+
   &__btn:hover,
   &__btn:focus {
   background-color: var(--hover-color-one);
@@ -14,10 +22,21 @@
   color: var(--background-color-two);
   margin-bottom: 20px;
   display: block;
+
+  @media screen and (max-width: 1190px) {
+    margin-bottom: 0;
+  }
+
 }
 
 .form-footer__field {
   display: flex;
+
+  @media screen and (max-width: 1190px){
+  flex-direction: column;
+align-items: center;
+gap: 20px;
+}
 
   & input {
   width: 358px;
@@ -40,6 +59,9 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   outline: transparent;
+  @media screen and (max-width: 767px){
+width: 450px;
+}
 }
 
 .form-footer__btn {
