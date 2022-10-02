@@ -12,7 +12,7 @@
 
 .features__icon {
   display: flex;
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   background-color: var(--background-color-three);
   border-radius: 4px;
@@ -20,12 +20,12 @@
   justify-content: center;
   margin-bottom: 25px;  
 @media screen and (min-width: 768px) {
-width: 354px;
+max-width: 354px;
 
 }
 
 @media screen and (min-width: 1200px) {
-width: 270px;
+max-width: 270px;
 }
   
 }
@@ -41,7 +41,7 @@ width: 270px;
   margin-bottom: 9.41px;
   text-align: center;
   @media screen and (min-width: 768px) {
-    width: 354px;
+    max-width: 354px;
     text-align: left;}
   
 
@@ -56,7 +56,7 @@ width: 270px;
 }
 
 .features__list {
-  width: 450px;
+  max-width: 450px;
 
 
  &:not(lastchild) {
@@ -65,13 +65,13 @@ width: 270px;
 
 
   @media screen and (min-width: 768px) {
-    width: 354px;
+    max-width: 354px;
     text-align: left;
 
 
 
   @media screen and (min-width: 1200px) {
-    width: 270px;
+    max-width: 270px;
     text-align: left;
   
   }
