@@ -29,6 +29,11 @@ padding-right: 15px;
   align-items: flex-start;
   color: var(--font-color-two);
 
+  @media screen and (max-width: 767px) {
+  display: none;}
+
+  
+
   
 
   &__link {
@@ -61,6 +66,9 @@ padding-right: 15px;
   gap: 10px;
   fill: var(--font-color-two);
 
+  @media screen and (max-width: 767px) {
+  display: none;}
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding: 0;
     display: flex;
@@ -69,9 +77,7 @@ padding-right: 15px;
 
   
 
-@media screen and (max-width: 767px) {
-  display: none;
-}
+
 
 
 }

@@ -1,6 +1,9 @@
 .section-portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  margin-left: auto;
+  margin-right: auto;
  
   @media screen and (min-width: 1200px) {
   padding-top: 94px;
@@ -26,7 +29,8 @@
 
 .project-thumb__description {
   display: inline-block;
-  width: 322px;
+  max-width: 322px;
+  width: 100%;
   font-size: 18px;
   line-height: 1.5;
   color: var(--background-color-two);
@@ -41,7 +45,10 @@
   justify-content: center;
   margin-right: -30px;
   margin-bottom: -30px;
-  
+
+  @media screen and (max-width: 767px) {
+  margin-right: 0px;}
+
   @media screen and (min-width: 768px) and (max-width: 1190px) {
   justify-content: flex-start;
   }
@@ -73,11 +80,14 @@
   margin-bottom: 30px;
 
   @media screen and (max-width: 767px) {
+  margin-right: 0px;
   min-width: 450px;
+  width: 100%;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1190px) {
   min-width: 354px;
+  width: 100%;
   }
 
 

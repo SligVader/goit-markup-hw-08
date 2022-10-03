@@ -46,7 +46,7 @@ url(../images/background/Img_sm-@2x.jpg);
   }
 
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) and (max-width: 1199px){
 padding: 118px 0PX 118px 0PX;
 max-width: 768px;
 min-height: 400px;
@@ -64,7 +64,7 @@ url(../images/background/Img_md-@2x.jpg);}
 
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/background/Img_lg@1x.jpg);
     background-position: center;

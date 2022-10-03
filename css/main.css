@@ -79,6 +79,11 @@ img {
           align-items: flex-start;
   color: var(--font-color-two);
 }
+@media screen and (max-width: 767px) {
+  .header-list {
+    display: none;
+  }
+}
 .header-list__link {
   color: var(--font-color-one);
   padding-top: 30px;
@@ -111,6 +116,11 @@ img {
   gap: 10px;
   fill: var(--font-color-two);
 }
+@media screen and (max-width: 767px) {
+  .header-list__contact {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-list__contact {
     padding: 0;
@@ -120,11 +130,6 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-}
-@media screen and (max-width: 767px) {
-  .header-list__contact {
-    display: none;
   }
 }
 
@@ -215,6 +220,11 @@ li > .current {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .logo {
+    margin-right: 0px;
+  }
+}
 .logo__part {
   text-transform: capitalize;
   color: var(--font-color-one);
@@ -300,16 +310,7 @@ li > .current {
   background-color: var(--background-color-one);
   padding-top: 60px;
   padding-bottom: 60px;
-}
-@media screen and (max-width: 767px) {
-  .footer {
-    max-width: 480px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer {
-    min-width: 768px;
-  }
+  max-width: 100%;
 }
 
 .footer-items-container {
@@ -562,7 +563,7 @@ li > .current {
   .form-footer {
     max-width: 450px;
     min-height: 86px;
-    width: auto;
+    width: 100%;
     height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -609,21 +610,11 @@ li > .current {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
   }
-}
-.form-footer__field input {
-  width: 358px;
-  height: 50px;
-  color: var(--background-color-two);
-  padding-left: 16px;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  outline: transparent;
 }
 
 .form-footer__field input {
-  width: 358px;
   height: 50px;
   color: var(--background-color-two);
   padding-left: 16px;
@@ -631,6 +622,17 @@ li > .current {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   outline: transparent;
+}
+@media screen and (min-width: 1200px) {
+  .form-footer__field input {
+    width: 358px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .form-footer__field input {
+    width: 100%;
+    max-width: 450px;
+  }
 }
 
 .form-footer__btn {
@@ -811,7 +813,7 @@ textarea {
 }
 @media screen and (max-width: 767px) {
   .form__checkbox {
-    width: auto;
+    width: 100%;
     max-width: 425px;
   }
 }
@@ -1067,7 +1069,7 @@ textarea {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/Img_sm-@2x.jpg);
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-title {
     padding: 118px 0PX 118px 0PX;
     max-width: 768px;
@@ -1076,13 +1078,13 @@ textarea {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/Img_md-@1x.jpg);
   }
 }
-@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .section-title {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/Img_md-@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/Img_md-@2x.jpg);
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .section-title {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/Img_lg@1x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/Img_lg@1x.jpg);
@@ -1094,7 +1096,7 @@ textarea {
     padding: 200px 0 200px 0;
   }
 }
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .section-title {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/Img_lg@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/Img_lg@2x.jpg);
@@ -1190,18 +1192,18 @@ textarea {
   background-color: var(--background-color-three);
   padding-top: 60px;
   padding-bottom: 60px;
-  max-width: 480px;
+  max-width: 100% px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .section-team {
-    max-width: 768px;
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .section-team {
-    max-width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -1287,7 +1289,6 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 480px;
 }
 @media screen and (max-width: 767px) {
   .customer-list {
@@ -1329,29 +1330,34 @@ textarea {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 767px) {
-  .customer-list__link {
-    width: 210px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .customer-list__link {
-    width: 226px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .customer-list__link {
-    width: 170px;
-  }
-}
 .customer-list__link:hover, .customer-list__link:focus {
   fill: var(--brand-color);
   outline: 1px solid var(--brand-color);
 }
 
+@media screen and (max-width: 767px) {
+  .customer-list__tab {
+    max-width: 210px;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .customer-list__tab {
+    max-width: 226px;
+    width: 33.333333%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customer-list__tab {
+    width: 170px;
+  }
+}
+
 .section-portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .section-portfolio {
@@ -1381,7 +1387,8 @@ textarea {
 
 .project-thumb__description {
   display: inline-block;
-  width: 322px;
+  max-width: 322px;
+  width: 100%;
   font-size: 18px;
   line-height: 1.5;
   color: var(--background-color-two);
@@ -1401,6 +1408,11 @@ textarea {
           justify-content: center;
   margin-right: -30px;
   margin-bottom: -30px;
+}
+@media screen and (max-width: 767px) {
+  .projects {
+    margin-right: 0px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) {
   .projects {
@@ -1435,12 +1447,15 @@ textarea {
 }
 @media screen and (max-width: 767px) {
   .project-item {
+    margin-right: 0px;
     min-width: 450px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) {
   .project-item {
     min-width: 354px;
+    width: 100%;
   }
 }
 
