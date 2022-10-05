@@ -65,6 +65,7 @@ padding-right: 15px;
   display: flex;
   gap: 10px;
   fill: var(--font-color-two);
+  align-items: center;
 
   @media screen and (max-width: 767px) {
   display: none;}
@@ -75,7 +76,10 @@ padding-right: 15px;
     justify-content: center;
   }
 
-  
+  @media screen and (min-width: 1200px) {
+    
+
+  }
 
 
 
